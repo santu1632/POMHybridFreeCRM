@@ -3,13 +3,14 @@
 <suite name="Failed suite [Free CRM testng automation scripts]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.qa.ExtentReportListener.ExtentReportListener"/>
+    <listener class-name="com.crm.qa.analyzer.MyTransformer"/>
   </listeners>
   <test thread-count="5" name="Regression(failed)">
     <classes>
       <class name="com.crm.qa.testcases.ContactsPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="validateCreateNewContactTest" invocation-numbers="2"/>
+          <include name="validateCreateNewContactTest" invocation-numbers="0 0"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.ContactsPageTest -->

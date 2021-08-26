@@ -5,14 +5,17 @@
 	<listeners>
 		<listener
 			class-name="com.qa.ExtentReportListener.ExtentReportListener" />
+		<listener class-name="com.crm.qa.analyzer.MyTransformer" />
 	</listeners>
 
 
 	<test name="Regression">
 		<classes>
 			<class name="com.crm.qa.testcases.ContactsPageTest" />
-			<class name="com.crm.qa.testcases.HomePageTest" />
-			<class name="com.crm.qa.testcases.LoginPageTest" />
+			<!--<class name="com.crm.qa.testcases.HomePageTest" /> <class name="com.crm.qa.testcases.LoginPageTest" 
+				/> -->
 		</classes>
-	</test> <!-- Test -->
+	</test>
+
+	<!-- Test -->
 </suite> <!-- Suite -->
